@@ -199,7 +199,7 @@ function posterior(prior, bits){
   if(!isFinite(po)) return 1;
   return po/(1+po);
 }
-function silenceBits(e){ var fp=Math.pow(2,-64); return Math.log2((1-e)/(1-fp)); } // ~ -e/ln2, small & negative
+function silenceBits(e){ e=Math.min(e,0.999999); var fp=Math.pow(2,-64); return Math.log2((1-e)/(1-fp)); } // ~ -e/ln2, small & negative (clamped off e=1 so log2 stays finite)
 function sliderToE(s){ return Math.pow(10, -3 + 3*(s/1000)); }
 
 var MEM=[
