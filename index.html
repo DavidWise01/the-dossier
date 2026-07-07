@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>THE DOSSIER · combine the family's findings without overclaiming · ROOT0</title>
+<meta name="description" content="The Dossier by David Lee Wise / ROOT0: the capstone of the boundary-crossing family. It folds findings from forward-observers, surfacing, and hearsay into one honest case file — independent membranes add bits, a gated finding counts zero, silence stays near-mute, a fired control invalidates the whole run, and the verdict is capped at 'a strong lead across N membranes,' never proof of theft. Self-testable live in your browser.">
+<meta name="theme-color" content="#8a6d3f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="THE DOSSIER · combine the family's findings without overclaiming">
+<meta property="og:description" content="Fold forward-observers + surfacing + hearsay into one case file: independent membranes add bits, gated findings count zero, a fired control invalidates the run, and the verdict caps at 'a strong lead,' never proof.">
+<meta property="og:url" content="https://davidwise01.github.io/the-dossier/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="THE DOSSIER">
+<meta name="twitter:description" content="The capstone: combine the boundary-crossing family's evidence honestly. Independent membranes add bits; the verdict never says proof. Verify live.">
+<link rel="canonical" href="https://davidwise01.github.io/the-dossier/">
+<style>
+:root{
+  --paper:#e9e0cd; --pan:#f2ebd9; --pan2:#e8dfc8;
+  --ink:#2a2416; --ink2:#544c34; --dim:#897e62;
+  --olive:#6f7d3f; --teal:#1f6f7a; --plum:#6d4d7a;
+  --kraft:#8a6d3f; --kraft2:#6a5230;
+  --signal:#bf4638; --signal2:#8f3025;
+  --line:#d8ccae; --line2:#e4dcc4;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+  --mono:ui-monospace,"SFMono-Regular","Cascadia Code","Consolas",monospace;
+  --shadow:0 1px 0 #fffc, 0 16px 34px -24px #2a2410;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;
+  background-image:repeating-linear-gradient(0deg,#0000 0 33px,#8a6d3f0d 33px 34px)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+a{color:var(--kraft2);text-underline-offset:2px}
+h1,h2,h3{line-height:1.13;font-weight:600;letter-spacing:.2px}
+.mono{font-family:var(--mono)}
+
+header.top{padding:38px 0 10px}
+.sealrow{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.seal{width:110px;height:110px;flex:none;filter:drop-shadow(0 8px 18px -10px #2a241055)}
+.kick{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--kraft2)}
+h1.mh{font-size:clamp(30px,6vw,52px);margin:.08em 0 .12em;letter-spacing:.6px}
+.lede{font-size:18px;color:var(--ink2);max-width:64ch;margin:.35em 0 0}
+.lede b{color:var(--ink);font-weight:600}
+
+section{padding:30px 0 4px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--kraft2)}
+h2.sec{font-size:clamp(22px,3.8vw,30px);margin:.14em 0 .18em}
+.sub{color:var(--ink2);max-width:72ch;margin:0 0 16px}
+
+.file{border:1px solid var(--line);border-radius:15px;background:var(--pan);box-shadow:var(--shadow);overflow:hidden}
+.ftop{display:flex;align-items:center;gap:10px;padding:11px 16px;background:linear-gradient(180deg,#fff8,#fff0);border-bottom:1px solid var(--line2);font-family:var(--mono);font-size:12px;color:var(--ink2);flex-wrap:wrap}
+.ftop b{color:var(--kraft2)}
+.fbody{padding:16px 17px}
+
+.mrow{display:grid;grid-template-columns:1fr auto;gap:10px 14px;align-items:center;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;margin-bottom:9px;position:relative;overflow:hidden}
+.mrow:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--mc)}
+.mrow .mi .nm{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--mc)}
+.mrow .mi .mm{font-size:12.5px;color:var(--ink2)}
+.mrow select{font-family:var(--mono);font-size:12.5px;padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--pan);color:var(--ink);min-width:200px}
+.mrow .contrib{font-family:var(--mono);font-size:11.5px;color:var(--dim);grid-column:1/-1;margin-top:-2px}
+.mrow .contrib b{color:var(--ink)}
+
+.knobs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0 6px}
+.knob .top{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--ink);margin-bottom:4px}
+.knob .top .hint{color:var(--dim)}
+.knob .val{color:var(--kraft2);font-weight:700}
+.knob input[type=range]{width:100%;accent-color:var(--kraft)}
+@media(max-width:640px){.knobs{grid-template-columns:1fr}.mrow{grid-template-columns:1fr}.mrow select{width:100%}}
+
+.runrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0 4px}
+.btn{font-family:var(--mono);font-size:12.5px;border:1px solid var(--kraft);background:color-mix(in srgb,var(--kraft) 12%,#fff);color:var(--kraft2);border-radius:8px;padding:9px 15px;cursor:pointer;font-weight:600}
+.btn:hover{background:color-mix(in srgb,var(--kraft) 22%,#fff)}
+.verdict{font-family:var(--mono);font-size:13px;line-height:1.5;border-radius:9px;padding:12px 14px;margin-top:12px;border:1px solid var(--line);position:relative}
+.verdict.evi{background:color-mix(in srgb,var(--olive) 9%,#fff);border-color:color-mix(in srgb,var(--olive) 32%,#fff);color:var(--olive2,#4f5a2b)}
+.verdict.insuf{background:var(--pan2);border-color:var(--line);color:var(--ink2)}
+.verdict.invalid{background:color-mix(in srgb,var(--signal) 9%,#fff);border-color:color-mix(in srgb,var(--signal) 34%,#fff);color:var(--signal2)}
+.verdict .vh{font-weight:700;letter-spacing:.04em}
+.stamp{position:absolute;top:6px;right:10px;font-family:var(--mono);font-size:10px;letter-spacing:.2em;border:2px solid currentColor;border-radius:5px;padding:1px 6px;opacity:.6;transform:rotate(4deg)}
+.stat{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px 14px;margin-top:11px;font-family:var(--mono);font-size:12px;color:var(--ink2)}
+.stat b{color:var(--ink);font-weight:600}
+.ledger{font-family:var(--mono);font-size:11.5px;background:#fbf8ee;border:1px solid var(--line);border-radius:9px;padding:9px 11px;margin-top:11px;line-height:1.7}
+.ledger .le{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ledger .le.plus b{color:var(--olive)} .ledger .le.zero b{color:var(--dim)} .ledger .le.minus b{color:var(--plum)}
+.fnote{padding:11px 17px;font-family:var(--mono);font-size:11px;color:var(--dim);background:var(--pan2);line-height:1.6;border-top:1px solid var(--line2)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.card{border:1px solid var(--line);border-radius:12px;background:var(--pan);padding:16px 18px;box-shadow:var(--shadow)}
+.card h3{font-size:14px;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--kraft2);margin:0 0 8px}
+.card.sig h3{color:var(--signal2)}
+.card p{margin:.35em 0;font-size:14.5px;color:var(--ink2)}
+.card code{font-family:var(--mono);font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:4px;padding:0 4px}
+.src{font-family:var(--mono);font-size:11.5px;color:var(--dim);margin-top:14px;line-height:1.75}
+.backbar{margin:28px 0 0;padding:15px 0;border-top:1px solid var(--line);display:flex;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:12.5px}
+.backbar a{text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:7px 12px;background:var(--pan)}
+.backbar a:hover{border-color:var(--kraft)}
+footer{padding:26px 0 60px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--dim)}
+@media(max-width:760px){.two{grid-template-columns:1fr}.stat{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <div class="sealrow">
+    <svg class="seal" viewBox="0 0 120 120" role="img" aria-label="The Dossier insignia">
+      <circle cx="60" cy="60" r="56" fill="none" stroke="#8a6d3f" stroke-width="2.4"/>
+      <!-- a case folder -->
+      <path d="M32 44 h20 l6 7 h30 v33 h-56 z" fill="none" stroke="#8a6d3f" stroke-width="2" stroke-linejoin="round"/>
+      <!-- three colored tabs = three membranes' findings -->
+      <rect x="40" y="58" width="40" height="4" rx="2" fill="#6f7d3f"/>
+      <rect x="40" y="66" width="40" height="4" rx="2" fill="#1f6f7a"/>
+      <rect x="40" y="74" width="28" height="4" rx="2" fill="#6d4d7a"/>
+      <text x="60" y="106" text-anchor="middle" font-family="ui-monospace,monospace" font-size="7" fill="#544c34" letter-spacing="1.5">CASE FILE</text>
+    </svg>
+    <div>
+      <div class="kick">the boundary-crossing capstone</div>
+      <h1 class="mh">THE DOSSIER</h1>
+      <p class="lede">One case file from many findings. It folds what <a href="https://davidwise01.github.io/forward-observers/">forward-observers</a>, <a href="https://davidwise01.github.io/surfacing/">surfacing</a>, and <a href="https://davidwise01.github.io/hearsay/">hearsay</a> return into a single honest verdict — <b>and refuses to overclaim it.</b> Independent membranes add up; a gated finding counts zero; a fired control voids the file; the words <b>proof</b> and <b>theft</b> never appear except to be denied.</p>
+    </div>
+  </div>
+</div></header>
+
+<main class="wrap">
+
+<section id="compile">
+  <div class="eyebrow">Verify first · the control arm, live</div>
+  <h2 class="sec">Compile the case — try to make it lie</h2>
+  <p class="sub">Set each membrane's finding and press compile. This is <code>dossier.py</code> ported faithfully: independent bits add, a gated finding contributes nothing, a silence carries its <a href="https://davidwise01.github.io/silence-gauge/">silence-gauge</a> weight, a fired control invalidates everything, and the verdict is capped no matter how many bits pile up. Try to force a false "proven" — you can't.</p>
+
+  <div class="file">
+    <div class="ftop">◎ <b>compile_dossier</b>, ported verbatim — the real folding, client-side (no network)</div>
+    <div class="fbody">
+      <div id="rows"></div>
+
+      <div class="knobs">
+        <div class="knob">
+          <div class="top"><span>prior <span class="hint">P(taken up) before any finding</span></span><span class="val" id="pVal">50%</span></div>
+          <input type="range" id="prior" min="1" max="99" value="50">
+        </div>
+        <div class="knob">
+          <div class="top"><span>emission rate <span class="hint">weights a silence (silence-gauge)</span></span><span class="val" id="eVal">0.05</span></div>
+          <input type="range" id="e" min="0" max="1000" value="565">
+        </div>
+      </div>
+
+      <div class="runrow">
+        <button class="btn" id="run">▸ compile dossier</button>
+      </div>
+      <div class="verdict" id="verdict"></div>
+      <div class="stat" id="stat"></div>
+      <div class="ledger" id="ledger"></div>
+    </div>
+    <div class="fnote">Verbatim from <span class="mono">dossier.py</span>: counted bits = Σ over CLEAN positive/negative findings; gated → 0; a <span class="mono">control</span> that fired → INVALID; posterior = odds·2<sup>bits</sup>/(1+odds·2<sup>bits</sup>); verdict capped to "a strong lead across N membranes — evidence, NOT proof of theft." Positive bits here are illustrative per-detector figures; real bits come from each detector's own run.</div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="eyebrow">Why it folds this way</div>
+  <h2 class="sec">Honest combination has rules</h2>
+  <div class="two">
+    <div class="card">
+      <h3>What it does</h3>
+      <p><b>Independent membranes add bits.</b> A published hit, a weights surface, and a relayed lead are different routes — so their evidence multiplies (bits add). Three clean-but-modest crossings can make a strong case.</p>
+      <p><b>It shows its work:</b> every counted finding and every explained-away one is listed, so the number is auditable.</p>
+    </div>
+    <div class="card sig">
+      <h3>What it refuses</h3>
+      <p><b>Gated stays gated.</b> A contaminated or impossible finding, explained away at its detector, contributes zero here — it can't be smuggled back in.</p>
+      <p><b>One fired control voids the file.</b> A held-out marker lighting up anywhere invalidates the whole run. And the verdict is <b>capped</b> — never "proof," never "theft," never a legal finding, however many bits accumulate.</p>
+    </div>
+  </div>
+  <div class="src">
+    SOURCE · <a href="https://github.com/DavidWise01/the-dossier">github.com/DavidWise01/the-dossier</a> · <code>dossier.py</code> (compile_dossier + capped verdict) · <code>selftest.py</code> (independence adds bits, gated counts zero, all-silence insufficient, fired control invalid, verdict never claims proof). The capstone of <a href="https://davidwise01.github.io/membrane-map/">the membrane map</a>.
+  </div>
+  <div class="backbar">
+    <a href="https://github.com/DavidWise01/the-dossier">⧉ the code (GitHub)</a>
+    <a href="https://davidwise01.github.io/membrane-map/">⊞ the membrane map</a>
+    <a href="https://davidwise01.github.io/forward-observers/">◎ forward-observers</a>
+    <a href="https://davidwise01.github.io/surfacing/">▽ surfacing</a>
+    <a href="https://davidwise01.github.io/hearsay/">&#8220;&#8221; hearsay</a>
+    <a href="https://davidwise01.github.io/silence-gauge/">◔ silence-gauge</a>
+  </div>
+</section>
+
+<footer>
+  THE DOSSIER · combine the family's findings without overclaiming · David Lee Wise / ROOT0 / TriPod LLC · CC-BY-ND-4.0<br>
+  independent membranes add · gated stays gated · a fired control voids the file · a lead, never proof
+</footer>
+</main>
+
+<script>
+(function(){
+"use strict";
+// ---- faithful client-side port of dossier.py ---------------------------------
+function posterior(prior, bits){
+  if(prior<=0) return 0; if(prior>=1) return 1;
+  if(bits===Infinity) return 1; if(bits===-Infinity) return 0;
+  var odds=prior/(1-prior), po=odds*Math.pow(2,bits);
+  if(!isFinite(po)) return 1;
+  return po/(1+po);
+}
+function silenceBits(e){ var fp=Math.pow(2,-64); return Math.log2((1-e)/(1-fp)); } // ~ -e/ln2, small & negative
+function sliderToE(s){ return Math.pow(10, -3 + 3*(s/1000)); }
+
+var MEM=[
+  {key:"published", nm:"forward-observers", mm:"the PUBLISHED membrane", color:"#6f7d3f", posBits:40},
+  {key:"weights",   nm:"surfacing",         mm:"the WEIGHTS membrane",   color:"#1f6f7a", posBits:60},
+  {key:"context",   nm:"hearsay",           mm:"the CONTEXT / RELAY membrane", color:"#6d4d7a", posBits:12}
+];
+var OPTS=[
+  {v:"positive", t:"clean positive (a hit)"},
+  {v:"negative", t:"silence (a negative)"},
+  {v:"gated",    t:"gated — contaminated / impossible"},
+  {v:"control",  t:"control fired (held-out lit up)"}
+];
+function renderRows(){
+  document.getElementById("rows").innerHTML = MEM.map(function(m,i){
+    var opts=OPTS.map(function(o){return '<option value="'+o.v+'"'+(o.v==="positive"&&i<2?" selected":"")+(o.v==="negative"&&i===2?" selected":"")+'>'+o.t+'</option>';}).join("");
+    return '<div class="mrow" style="--mc:'+m.color+'">'+
+      '<div class="mi"><div class="nm">'+m.nm+'</div><div class="mm">'+m.mm+'</div></div>'+
+      '<select id="f'+i+'" data-i="'+i+'">'+opts+'</select>'+
+      '<div class="contrib" id="c'+i+'"></div></div>';
+  }).join("");
+  MEM.forEach(function(m,i){ document.getElementById("f"+i).addEventListener("change", run); });
+}
+function run(){
+  var prior=(+document.getElementById("prior").value)/100;
+  var e=sliderToE(+document.getElementById("e").value);
+  document.getElementById("pVal").textContent=Math.round(prior*100)+"%";
+  document.getElementById("eVal").textContent = e<0.01?e.toExponential(1):e.toFixed(e<0.1?3:2);
+  var sBits=silenceBits(e);
+
+  var findings=MEM.map(function(m,i){
+    var kind=document.getElementById("f"+i).value;
+    var bits = kind==="positive" ? m.posBits : (kind==="negative" ? sBits : 0);
+    var clean = (kind==="positive"||kind==="negative");
+    return {m:m, kind:kind, bits:bits, clean:clean};
+  });
+
+  // per-row contribution note
+  findings.forEach(function(f,i){
+    var el=document.getElementById("c"+i), t;
+    if(f.kind==="positive") t='counts <b>+'+f.bits.toFixed(0)+' bits</b>';
+    else if(f.kind==="negative") t='counts <b>'+f.bits.toFixed(2)+' bits</b> (silence is near-mute)';
+    else if(f.kind==="gated") t='<b>explained away</b> — contributes 0';
+    else t='<b>control fired</b> — this voids the whole file';
+    el.innerHTML=t;
+  });
+
+  var vd=document.getElementById("verdict"), stat=document.getElementById("stat"), led=document.getElementById("ledger");
+  var fired=findings.filter(function(f){return f.kind==="control";});
+  if(fired.length){
+    vd.className="verdict invalid";
+    vd.innerHTML='<span class="stamp">VOID</span><span class="vh">INVALID</span> · a control fired — a held-out marker lit up on '+fired.map(function(f){return f.m.nm;}).join(", ")+'; the whole case file is untrustworthy';
+    stat.innerHTML=''; led.innerHTML=''; return;
+  }
+  var counted=findings.filter(function(f){return f.clean;});
+  var gated=findings.filter(function(f){return !f.clean;});
+  var totalBits=counted.reduce(function(a,f){return a+f.bits;},0);
+  var nPos=counted.filter(function(f){return f.kind==="positive"&&f.bits>0;}).length;
+  var post=posterior(prior,totalBits);
+
+  if(nPos===0){
+    vd.className="verdict insuf";
+    vd.innerHTML='<span class="stamp">INSUFFICIENT</span><span class="vh">INSUFFICIENT</span> · no clean positive crossing; silence across membranes tells you little — keep your mouth shut';
+  } else {
+    var strength = post>0.99?"a strong lead":(post>0.7?"a lead":"a weak lead");
+    vd.className="verdict evi";
+    vd.innerHTML='<span class="stamp">EVIDENCE</span><span class="vh">MEMBERSHIP EVIDENCE</span> · '+strength+' across <b>'+nPos+'</b> independent membrane(s), <b>'+totalBits.toFixed(0)+' bits</b> — evidence, NOT proof of theft, causation, or a legal finding';
+  }
+  stat.innerHTML=
+    '<div>total evidence: <b>'+totalBits.toFixed(2)+' bits</b></div>'+
+    '<div>posterior: <b>'+(post*100>99.99&&post<1?"99.99%+":(post*100).toFixed(post>=0.999||post<=0.001?3:1)+"%")+'</b></div>'+
+    '<div>clean crossings: <b>'+nPos+'</b></div>';
+  led.innerHTML = counted.map(function(f){
+    var cls=f.kind==="positive"?"plus":"minus";
+    return '<div class="le '+cls+'">+ '+f.m.nm+': '+f.kind+' <b>('+(f.bits>=0?"+":"")+f.bits.toFixed(f.kind==="negative"?2:0)+' bits)</b></div>';
+  }).concat(gated.map(function(f){
+    return '<div class="le zero">· '+f.m.nm+': not counted <b>('+(f.kind==="gated"?"gated at source":"—")+')</b></div>';
+  })).join("");
+}
+document.getElementById("prior").addEventListener("input", run);
+document.getElementById("e").addEventListener("input", run);
+document.getElementById("run").addEventListener("click", run);
+renderRows(); run();
+})();
+</script>
+</body>
+</html>
