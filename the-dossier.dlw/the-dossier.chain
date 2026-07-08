@@ -1,0 +1,9 @@
+ROOT0-DLW-CHAIN-v1
+index : 317
+slug  : the-dossier
+seal  : b64301a0d73e4aaea3a0070c73e2393c6b67229aaf129873ef5ea1d76f5e7e67
+prev  : 34bfb6c935fe91c2fdb620459f7ed11f7935cfc5fe87caa53cee51a60be95ac0
+link  : 79f6eb5f0d6a1d035f072ae1994d831d359c2b2aa3b43e4cf60df76d8b562f13
+head  : 3447d3a0533aaf1e29a8bdc67a9774884fb3ae9dbc8a17064b7a008ca3c4ec90
+
+— the tether: link = sha256(index|slug|seal|prev). the chain head commits to the whole corpus.
